@@ -3,7 +3,7 @@ import shutil
 import random
 
 
-def collect_images(source_folders, target_folder, total_images=3000):
+def collect_images(source_folders, target_folder, total_images=3000):              # total_images 图像数据大小指定
     images_per_folder = total_images // len(source_folders)
 
     all_images = []
