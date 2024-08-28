@@ -26,6 +26,6 @@ def remove_unmatched_images(image_folder, xml_folder):
         print(f"已删除无对应XML标签的图像文件: {image_file}")
 
 # 示例调用
-image_folder = r'D:\blade_datasets_processed\黑崖子风场_val\images\Normal_2000'  # 替换为实际的图像文件夹路径
-xml_folder = r'D:\blade_datasets_processed\黑崖子风场_val\xml\Normal_2000'  # 替换为实际的xml文件夹路径
+image_folder = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\train_datasets\images'  # 替换为实际的图像文件夹路径
+xml_folder = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\train_datasets\xmls_shaixuan'  # 替换为实际的xml文件夹路径
 remove_unmatched_images(image_folder, xml_folder)

@@ -29,7 +29,7 @@ def update_xml_files(folder_path):
 
 
 # 指定要遍历的文件夹路径
-folder_path = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\val_datasets\xmls_shaixuan - 副本'
+folder_path = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\train_datasets\xmls'
 
 # 更新XML文件
 update_xml_files(folder_path)

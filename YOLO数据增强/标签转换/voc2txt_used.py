@@ -100,9 +100,9 @@ if __name__ == "__main__":
     # 1、需要转化的类别
     classes = ['1.normal-cabinet', '2.dooropen-cabinet', '3.dooroff-cabinet', '4.damage-cabinet', '5.severerust-cabinet', '6.foreignobject-cabinet', '26.slightrust-cabinet']
     # 2、voc格式的xml标签文件路径
-    xml_files1 = r'D:\meterbox_defect_datasets\meterbox_yishaixuan\train_datasets\xml_shaixuan'
+    xml_files1 = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\val_datasets\xmls_shaixuan - 副本'
     # 3、转化为yolo格式的txt标签文件存储路径
-    save_txt_files1 = r'D:\meterbox_defect_datasets\meterbox_yishaixuan\train_datasets\txt'
+    save_txt_files1 = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\val_datasets\labels'
 
     convert_annotation(xml_files1, save_txt_files1, classes)
 

@@ -1,6 +1,6 @@
 # python
 # -*- coding:utf-8 -*-
-# @FileName  :voc2txt_2.py
+# @FileName  :voc2txt_meterbox.py
 # @Time      :2024/7/23 10:21
 # @Author    :JHX
 
@@ -49,11 +49,10 @@ def convert_annotation(xml_files_path, save_txt_files_path, classes):
 
 if __name__ == "__main__":
     # 需要转换的类别
-    classes = ['1.normal-cabinet', '2.dooropen-cabinet', '3.dooroff-cabinet', '4.damage-cabinet', '5.severerust-cabinet', '6.foreignobject-cabinet', '26.slightrust-cabinet']
-    # TODO： 就算数据集中没有1.normal-cabinet这个类别，也需要把他加上，否则会造成txt标签中的类别不匹配
+    classes = ['BX', 'DQ', 'FS', 'Normal', 'TL', 'WR', 'BQ']
     # VOC格式的XML标签文件路径
-    xml_files1 = r'D:\meterbox_defect_datasets\meterbox_yishaixuan\val_datasets\xmls_shaixuan'
+    xml_files1 = r'D:\blade_datasets_processed_extracted1_chongbiaozhu\黑崖子风场_val\xml'
     # 转换为YOLO格式的TXT标签文件存储路径
-    save_txt_files1 = r'D:\meterbox_defect_datasets\meterbox_yishaixuan\val_datasets\txt'
+    save_txt_files1 = r'D:\blade_datasets_processed_extracted1_chongbiaozhu\黑崖子风场_val\labels'
 
     convert_annotation(xml_files1, save_txt_files1, classes)

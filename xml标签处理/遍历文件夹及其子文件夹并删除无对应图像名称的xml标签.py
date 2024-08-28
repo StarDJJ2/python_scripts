@@ -27,7 +27,7 @@ def remove_unmatched_xml(image_folder, xml_folder):
         print(f"已删除无对应图像的XML文件: {xml_path}")
 
 # 示例调用
-image_folder = r'D:\blade_datasets_processed\广西风机巡检_val\images\Normal'  # 替换为实际的图像文件夹路径
-xml_folder = r'D:\blade_datasets_processed\广西风机巡检_val\xml\Normal'  # 替换为实际的xml文件夹路径
+image_folder = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\train_datasets\images'  # 替换为实际的图像文件夹路径
+xml_folder = r'D:\meterbox_defect_datasets\meterbox_yishaixuan_20240814\train_datasets\xmls'  # 替换为实际的xml文件夹路径
 remove_unmatched_xml(image_folder, xml_folder)
 
