@@ -24,6 +24,6 @@ def remove_unmatched_txt_labels(image_folder, txt_folder):
         print(f"已删除无对应图像的TXT标签文件: {txt_path}")
 
 # 示例调用
-image_folder = r'D:\datasets\Det-cabinet-5v\val\images'  # 替换为实际的图像文件夹路径
-txt_folder = r'D:\datasets\Det-cabinet-5v\val\labels'  # 替换为实际的txt文件夹路径
+image_folder = r'E:\Server13_yaw_datasets\obb-data\images\images'  # 替换为实际的图像文件夹路径
+txt_folder = r'E:\Server13_yaw_datasets\obb-data\labels\train'  # 替换为实际的txt文件夹路径
 remove_unmatched_txt_labels(image_folder, txt_folder)
